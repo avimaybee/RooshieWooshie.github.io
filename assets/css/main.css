@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("fontawesome-all.min.css");
 
-
+:root {
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --glass-blur: blur(10px);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -420,10 +425,7 @@ input, select, textarea {
 	}
 
 		body:before {
-			-moz-animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-hide 0.25s ease-in-out forwards !important;
-			-webkit-animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-hide 0.25s ease-in-out forwards !important;
-			-ms-animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-hide 0.25s ease-in-out forwards !important;
-			animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-hide 0.25s ease-in-out forwards !important;
+			
 			-moz-transform-origin: 50% 50%;
 			-webkit-transform-origin: 50% 50%;
 			-ms-transform-origin: 50% 50%;
@@ -476,14 +478,7 @@ input, select, textarea {
 			z-index: 100001;
 		}
 
-		body.is-preload:after {
-			-moz-animation: none !important;
-			-webkit-animation: none !important;
-			-ms-animation: none !important;
-			animation: none !important;
-			opacity: 1;
-			z-index: 100000;
-		}
+		
 
 	@media (-webkit-min-device-pixel-ratio: 2) {
 
@@ -2338,6 +2333,8 @@ a.button.down {
 }
 
 .gallery-item {
+	will-change: transform, opacity;
+    contain: content;
     position: relative;
     border-radius: 15px;
     overflow: hidden;
@@ -2867,6 +2864,17 @@ body:before {
     animation: none !important;
 }
 
+/* Add this to override any remaining loader styles */
+body:before {
+    display: none !important;
+    content: none !important;
+    animation: none !important;
+}
+
+.loader, 
+.spinner {
+    display: none !important;
+}
 body.is-preload:before {
     display: none !important;
     animation: none !important;
