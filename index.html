@@ -1,6 +1,13 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
+		<!-- Add this in your <head> section -->
+		<!-- Add these near the top of your head section -->
+		<link rel="preload" href="assets/css/main.css" as="style">
+		<link rel="preload" href="assets/music/iwannabeyours.mp3" as="audio">
+		<link rel="preload" href="sahar/background_intro.mp4" as="video">
+		<link rel="preload" href="https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlxdu.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2" as="font" type="font/woff2" crossorigin>
 		<script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 		<title>I love you</title>
@@ -229,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		<!-- Intro -->
 		<section id="intro" class="main style1 dark fullscreen">
-			<video class="video-bg" autoplay muted loop playsinline>
+			<video class="video-bg" autoplay muted loop playsinline preload="auto">
 				<source src="sahar/background_intro.mp4" type="video/mp4">
 			</video>
 			<div class="bottom-gradient"></div>
@@ -594,7 +601,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<!-- Image 2 -->
 							<div class="gallery-item">
-								<img src="sahar/4.my honest reaction to this info.png" alt="Our First Memory">
+								<img src="sahar/4.my honest reaction to this info.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>the first meme i made of you</p>
 								</div>
@@ -602,14 +609,14 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<!-- Image 3 -->
 							<div class="gallery-item">
-								<img src="sahar/5.hoodie for sahar.jpg" alt="Our First Memory">
+								<img src="sahar/5.hoodie for sahar.jpg" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>our hoodie ritual when we were besties, it was so cute</p>
 								</div>
 							</div>
 							<!-- Image 1 -->
 							<div class="gallery-item">
-								<img src="sahar/6.manifest.png" alt="Our First Memory">
+								<img src="sahar/6.manifest.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>i manifested and i got it</p>
 								</div>
@@ -617,7 +624,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<!-- Image 2 -->
 							<div class="gallery-item">
-								<img src="sahar/7.baby sahar telephone aww.png" alt="Our First Memory">
+								<img src="sahar/7.baby sahar telephone aww.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>i LOVE this photo of baby sahar mwah so cute</p>
 								</div>
@@ -625,14 +632,14 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<!-- Image 3 -->
 							<div class="gallery-item">
-								<img src="sahar/8.sahar drawing rooftop nightsky.png" alt="Our First Memory">
+								<img src="sahar/8.sahar drawing rooftop nightsky.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>our ideal date according to you</p>
 								</div>
 							</div>
 							<!-- Image 1 -->
 							<div class="gallery-item">
-								<img src= "sahar/9.first anda pic.png" alt="Our First Memory">
+								<img src= "sahar/9.first anda pic.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>MERA ANDAAAAAAA !!!!!</p>
 								</div>
@@ -640,7 +647,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<!-- Image 2 -->
 							<div class="gallery-item">
-								<img src="sahar/10.sahar asking for promise to stay with her.png" alt="Our First Memory">
+								<img src="sahar/10.sahar asking for promise to stay with her.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>It melted my heart when you said that</p>
 								</div>
@@ -648,14 +655,14 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<!-- Image 3 -->
 							<div class="gallery-item">
-								<img src="sahar/10a.noodle in mouth sexy enough.jpg" alt="Our First Memory">
+								<img src="sahar/10a.noodle in mouth sexy enough.jpg" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>yes babe, very sexy</p>
 								</div>
 							</div>
 							<div class="gallery-item">
 								<video autoplay muted loop width="100%">
-									<source src="sahar/11.COLORING TREND.mp4" type="video/mp4">
+									<source src="sahar/11.COLORING TREND.mp4" loading="lazy" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
 								<div class="gallery-caption">
@@ -665,7 +672,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<!-- Image 2 -->
 							<div class="gallery-item">
-								<img src="sahar/12.first hand pic.png" alt="Our First Memory">
+								<img src="sahar/12.first hand pic.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>First hand pic hehe
 										   (HAWWWWT)
@@ -675,7 +682,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<div class="gallery-item">
 								<video autoplay muted loop width="100%">
-									<source src="sahar/12a.when she wore a saree.mp4" type="video/mp4">
+									<source src="sahar/12a.when she wore a saree.mp4" loading="lazy" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
 								<div class="gallery-caption">
@@ -686,7 +693,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<!-- Image 2 -->
 							<div class="gallery-item">
-								<img src="sahar/13.first love bomb kind of.png" alt="Our First Memory">
+								<img src="sahar/13.first love bomb kind of.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>okay it just made my heart overflow with love, im melting. nakhre to mere hamesha se hi they</p>
 								</div>
@@ -694,7 +701,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<div class="gallery-item">
 								<video autoplay muted loop width="100%">
-									<source src="sahar/14.sahar hottie dance.mp4" type="video/mp4">
+									<source src="sahar/14.sahar hottie dance.mp4" loading="lazy" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
 								<div class="gallery-caption">
@@ -703,7 +710,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 							</div>
 							<!-- Image 1 -->
 							<div class="gallery-item">
-								<img src="sahar/15.cute moment.png" alt="Our First Memory">
+								<img src="sahar/15.cute moment.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>i still remember it clearly how excited i got hehe</p>
 								</div>
@@ -711,7 +718,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<div class="gallery-item">
 								<video autoplay muted loop width="100%">
-									<source src="sahar/16.thappad wali video.mp4" type="video/mp4">
+									<source src="sahar/16.thappad wali video.mp4" loading="lazy" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
 								<div class="gallery-caption">
@@ -721,14 +728,14 @@ document.addEventListener('DOMContentLoaded', startGame);
 
 							<!-- Image 3 -->
 							<div class="gallery-item">
-								<img src="sahar/17.me and sahar wedding card.png" alt="Our First Memory">
+								<img src="sahar/17.me and sahar wedding card.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>WIFEY WIFEY WIFEY WIFEY SNIPER SNIPER SNIPER SNIPER</p>
 								</div>
 							</div>
 							<!-- Image 1 -->
 							<div class="gallery-item">
-								<img src="sahar/18.sahar flirting w me sexy.png" alt="Our First Memory">
+								<img src="sahar/18.sahar flirting w me sexy.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>bas shaadi hone ki der thi and look at you flirting and stuff</p>
 								</div>
@@ -736,7 +743,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<!-- Image 2 -->
 							<div class="gallery-item">
-								<img src="sahar/19.when she called me 8 times .png" alt="Our First Memory">
+								<img src="sahar/19.when she called me 8 times .png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>i clearly remember i was sitting at the edge of the bed and you kept insisting i pick up the call, waha se my mom was getting sus looking at me from the kitchen</p>
 								</div>
@@ -744,14 +751,14 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<!-- Image 3 -->
 							<div class="gallery-item">
-								<img src="sahar/20.horny bae.png" alt="Our First Memory">
+								<img src="sahar/20.horny bae.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>horny ahh wifey(i fucking loved it)</p>
 								</div>
 							</div>
 							<!-- Image 1 -->
 							<div class="gallery-item">
-								<img src="sahar/21.sahar manifesting to enter in my dreams.png" alt="Our First Memory">
+								<img src="sahar/21.sahar manifesting to enter in my dreams.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>did it work?</p>
 								</div>
@@ -759,7 +766,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<!-- Image 2 -->
 							<div class="gallery-item">
-								<img src="sahar/22.sahar sensitive story.png" alt="Our First Memory">
+								<img src="sahar/22.sahar sensitive story.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>youre safe with me babe. im yours. always. and ill love you even after i die.</p>
 								</div>
@@ -767,21 +774,21 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<!-- Image 3 -->
 							<div class="gallery-item">
-								<img src="sahar/23.me and sahar heart doodle.jpg" alt="Our First Memory">
+								<img src="sahar/23.me and sahar heart doodle.jpg" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>this is my favourite memory of us, it has everything we like</p>
 								</div>
 							</div>
 							<!-- Image 1 -->
 							<div class="gallery-item">
-								<img src="sahar/24.purse photo sahar.jpg" alt="Our First Memory">
+								<img src="sahar/24.purse photo sahar.jpg" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>it wont ever leave my purse</p>
 								</div>
 							</div>
 							<!-- Image 3 -->
 							<div class="gallery-item">
-								<img src="sahar/25afirst time she asked for video call.png" alt="Our First Memory">
+								<img src="sahar/25afirst time she asked for video call.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>I was sooooo excited to see you, so nervous and excited</p>
 								</div>
@@ -789,14 +796,14 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<!-- Image 2 -->
 							<div class="gallery-item">
-								<img src="sahar/25.me and sahar on first video call she studying.png" alt="Our First Memory">
+								<img src="sahar/25.me and sahar on first video call she studying.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>Our first video call, you asked me first if you could lmao i loved watching my baby</p>
 								</div>
 							</div>
 							<!-- Image 1 -->
 							<div class="gallery-item">
-								<img src="sahar/26.letter by sahar on my birthday.jpg" alt="Our First Memory">
+								<img src="sahar/26.letter by sahar on my birthday.jpg" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>The best birthday gift ive ever got. its a treasure for me that ill always cherish. </p>
 								</div>
@@ -804,7 +811,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 
 							<div class="gallery-item">
 								<video autoplay muted loop width="100%">
-									<source src="sahar/27.iloveyou voicennotes.mp4" type="video/mp4">
+									<source src="sahar/27.iloveyou voicennotes.mp4" loading="lazy" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
 								<div class="gallery-caption">
@@ -814,7 +821,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<!-- Image 1 -->
 							<div class="gallery-item">
-								<img src="sahar/28.breakupafter birthday.png" alt="Our First Memory">
+								<img src="sahar/28.breakupafter birthday.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>traumatised me, but im glad we talked it out babe</p>
 								</div>
@@ -822,7 +829,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<div class="gallery-item">
 								<video autoplay muted loop width="100%">
-									<source src="sahar/29.my first kissie.mp4" type="video/mp4">
+									<source src="sahar/29.my first kissie.mp4" loading="lazy" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
 								<div class="gallery-caption">
@@ -833,7 +840,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<div class="gallery-item">
 								<video autoplay muted loop width="100%">
-									<source src="sahar/30.tookmetobathroom.mp4" type="video/mp4">
+									<source src="sahar/30.tookmetobathroom.mp4" loading="lazy" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
 								<div class="gallery-caption">
@@ -842,7 +849,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 							</div>
 							<!-- Image 1 -->
 							<div class="gallery-item">
-								<img src="sahar/31.b.bad mehendi sahar cry.jpg" alt="Our First Memory">
+								<img src="sahar/31.b.bad mehendi sahar cry.jpg" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>I hold a very strong grudge against the person who did your mehendi babe. cant forgive all the tears you cried because of her.</p>
 								</div>
@@ -850,7 +857,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<!-- Image 2 -->
 							<div class="gallery-item">
-								<img src="sahar/31.d.fav phoot cute brown suit.png" alt="Our First Memory">
+								<img src="sahar/31.d.fav phoot cute brown suit.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>ye photo maine mummy ko dikhai thi. Rishta pakka. its my most favourite photo of yours</p>
 								</div>
@@ -858,7 +865,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<div class="gallery-item">
 								<video autoplay muted loop width="100%">
-									<source src="sahar/31a.iddie.mp4" type="video/mp4">
+									<source src="sahar/31a.iddie.mp4" loading="lazy" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
 								<div class="gallery-caption">
@@ -867,7 +874,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 							</div>
 							<div class="gallery-item">
 								<video autoplay muted loop width="100%">
-									<source src="sahar/31c.the first website i made for her.mp4" type="video/mp4">
+									<source src="sahar/31c.the first website i made for her.mp4" loading="lazy" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
 								<div class="gallery-caption">
@@ -877,7 +884,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<div class="gallery-item">
 								<video autoplay muted loop width="100%">
-									<source src="sahar/32.love bomb again.mp4" type="video/mp4">
+									<source src="sahar/32.love bomb again.mp4" loading="lazy" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
 								<div class="gallery-caption">
@@ -887,7 +894,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<div class="gallery-item">
 								<video autoplay muted loop width="100%">
-									<source src="sahar/33.firstfeetpic.mp4" type="video/mp4">
+									<source src="sahar/33.firstfeetpic.mp4" loading="lazy" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
 								<div class="gallery-caption">
@@ -896,7 +903,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 							</div>
 							<!-- Image 1 -->
 							<div class="gallery-item">
-								<img src="sahar/33a.hours of call.png" alt="Our First Memory">
+								<img src="sahar/33a.hours of call.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>that was the longest wed been on call together at that time and i see that as an achievement</p>
 								</div>
@@ -904,7 +911,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<!-- Image 2 -->
 							<div class="gallery-item">
-								<img src="sahar/33.sahar angy spam.png" alt="Our First Memory">
+								<img src="sahar/33.sahar angy spam.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>i was smiling and laughing and awed the whole time</p>
 								</div>
@@ -912,7 +919,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<!-- Image 1 -->
 							<div class="gallery-item">
-								<img src="sahar/34.sahar asking me to be her boyfriend.png" alt="Our First Memory">
+								<img src="sahar/34.sahar asking me to be her boyfriend.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>The first time you asked me to be your boyfriend</p>
 								</div>
@@ -920,7 +927,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<!-- Image 2 -->
 							<div class="gallery-item">
-								<img src="sahar/35.kaamwali sahar video call.png" alt="Our First Memory">
+								<img src="sahar/35.kaamwali sahar video call.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>Kaam wali bai XD</p>
 								</div>
@@ -928,14 +935,14 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<!-- Image 3 -->
 							<div class="gallery-item">
-								<img src="sahar/36.first thigh pic.jpg" alt="Our First Memory">
+								<img src="sahar/36.first thigh pic.jpg" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>First thigh pic Yoooooooooooooooooo JUICYYYYYY CRUSH ME BETWEEN THEM UGH</p>
 								</div>
 							</div>
 							<!-- Image 1 -->
 							<div class="gallery-item">
-								<img src="sahar/37a.1000 photos milestone.png" alt="Our First Memory">
+								<img src="sahar/37a.1000 photos milestone.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>1000 Milestone reached ! can you guess whats the current count?</p>
 								</div>
@@ -943,7 +950,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<div class="gallery-item">
 								<video autoplay muted loop width="100%">
-									<source src="sahar/38.lip bite.mp4" type="video/mp4">
+									<source src="sahar/38.lip bite.mp4" loading="lazy" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
 								<div class="gallery-caption">
@@ -953,7 +960,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<div class="gallery-item">
 								<video autoplay muted loop width="100%">
-									<source src="sahar/38a.i literally won yall.mp4" type="video/mp4">
+									<source src="sahar/38a.i literally won yall.mp4" loading="lazy" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
 								<div class="gallery-caption">
@@ -962,7 +969,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 							</div>
 							<div class="gallery-item">
 								<video autoplay muted loop width="100%">
-									<source src="sahar/39.sahar annoyed looking back.mp4" type="video/mp4">
+									<source src="sahar/39.sahar annoyed looking back.mp4" loading="lazy" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
 								<div class="gallery-caption">
@@ -972,7 +979,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<!-- Image 2 -->
 							<div class="gallery-item">
-								<img src="sahar/39a.sahar ovulating remindeer.png" alt="Our First Memory">
+								<img src="sahar/39a.sahar ovulating remindeer.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>I still get the ovulationg reminders babe</p>
 								</div>
@@ -980,14 +987,14 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<!-- Image 3 -->
 							<div class="gallery-item">
-								<img src="sahar/39a.screenshot sahar homepage heart wallpaper.jpg" alt="Our First Memory">
+								<img src="sahar/39a.screenshot sahar homepage heart wallpaper.jpg" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>half mine, half yours, make the whole of us <3</p>
 								</div>
 							</div>
 							<!-- Image 1 -->
 							<div class="gallery-item">
-								<img src="sahar/40. felt like husbandat the wax parlor.jpg" alt="Our First Memory">
+								<img src="sahar/40. felt like husbandat the wax parlor.jpg" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>I got the proper married vibes here like i sent my wife to the parlour to get ready and she is updating me and stuff it was very cute and intimate</p>
 								</div>
@@ -995,7 +1002,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<!-- Image 2 -->
 							<div class="gallery-item">
-								<img src="sahar/41.sahar saying she will kill herself.png" alt="Our First Memory">
+								<img src="sahar/41.sahar saying she will kill herself.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>baby i was genuinely afraid of what youre saying. just know, IM NEVER LEAAVING YOU BABE NEVER !!!! I LOVE YOU SO MUCH</p>
 								</div>
@@ -1003,14 +1010,14 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<!-- Image 3 -->
 							<div class="gallery-item">
-								<img src="sahar/42.certificate green.jpg" alt="Our First Memory">
+								<img src="sahar/42.certificate green.jpg" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>fuck yeah ive the best girlfriend mwah</p>
 								</div>
 							</div>
 								<!-- Image 1 -->
 								<div class="gallery-item">
-									<img src="sahar/43.black and white wallpaper i made for her.png" alt="Our First Memory">
+									<img src="sahar/43.black and white wallpaper i made for her.png" loading="lazy" alt="Our First Memory">
 									<div class="gallery-caption">
 										<p>updated the OG wallpaper with our hearts but you didnt use it lmaooo</p>
 									</div>
@@ -1018,7 +1025,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 							
 								<!-- Image 2 -->
 								<div class="gallery-item">
-									<img src="sahar/44.sleptoncall.jpg" alt="Our First Memory">
+									<img src="sahar/44.sleptoncall.jpg" loading="lazy" alt="Our First Memory">
 									<div class="gallery-caption">
 										<p>this was the cutest night ive spent with you bae</p>
 									</div>
@@ -1026,14 +1033,14 @@ document.addEventListener('DOMContentLoaded', startGame);
 							
 								<!-- Image 3 -->
 								<div class="gallery-item">
-									<img src="sahar/44asahar bday coming up notif.png" alt="Our First Memory">
+									<img src="sahar/44asahar bday coming up notif.png" loading="lazy" alt="Our First Memory">
 									<div class="gallery-caption">
 										<p>OMG ITS WIFEY'S BDAY IN A WEEK!!!! (ive been preparing it for the past two months but cute thank you google)</p>
 									</div>
 								</div>
 									<!-- Image 1 -->
 							<div class="gallery-item">
-								<img src="sahar/45.when she tried to breakup with me september.png" alt="Our First Memory">
+								<img src="sahar/45.when she tried to breakup with me september.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>WHAT WAS THAT BABE YOU FIND THE WORST TIMING SRSLY</p>
 								</div>
@@ -1041,7 +1048,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<!-- Image 2 -->
 							<div class="gallery-item">
-								<img src="sahar/45a.gmail she sent me after breaking up.png" alt="Our First Memory">
+								<img src="sahar/45a.gmail she sent me after breaking up.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>There goes your bday gift spoilt, i get so sad whenever i think about it.</p>
 								</div>
@@ -1049,21 +1056,21 @@ document.addEventListener('DOMContentLoaded', startGame);
 						
 							<!-- Image 3 -->
 							<div class="gallery-item">
-								<img src="sahar/46date pic.jpeg" alt="Our First Memory">
+								<img src="sahar/46date pic.jpeg" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>baby, will you go on a date with me?</p>
 								</div>
 							</div>
 							<!-- Image 3 -->
 							<div class="gallery-item">
-								<img src="sahar/46me and sahar edit vc.jpg" alt="Our First Memory">
+								<img src="sahar/46me and sahar edit vc.jpg" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>and we were getting ready together for our cute lil date.</p>
 								</div>
 							</div>
 							<!-- Image 1 -->
 								<div class="gallery-item">
-									<img src="sahar/46me and sahar edit stairs.jpg" alt="Our First Memory">
+									<img src="sahar/46me and sahar edit stairs.jpg" loading="lazy" alt="Our First Memory">
 									<div class="gallery-caption">
 										<p>MATCHING MATCHING !!! it was such a cute date</p>
 									</div>
@@ -1073,7 +1080,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 							
 							<!-- Image 3 -->
 							<div class="gallery-item">
-								<img src="sahar/46me and sahar edit garden.jpg" alt="Our First Memory">
+								<img src="sahar/46me and sahar edit garden.jpg" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>straight out of a movie hehe, beautiful (took me weeks to edit)</p>
 								</div>
@@ -1081,7 +1088,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 							
 							<!-- Image 3 -->
 							<div class="gallery-item">
-								<img src="sahar/46.me and sahar edit bathroom.jpg" alt="Our First Memory">
+								<img src="sahar/46.me and sahar edit bathroom.jpg" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>hotties, and we are matching again</p>
 								</div>
@@ -1089,7 +1096,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 							
 							<!-- Image 3 -->
 							<div class="gallery-item">
-								<img src="sahar/47she swears by god she will never leave me.png" alt="Our First Memory">
+								<img src="sahar/47she swears by god she will never leave me.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>i love you so much baby</p>
 								</div>
@@ -1097,7 +1104,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 							
 							<!-- Image 3 -->
 							<div class="gallery-item">
-								<img src="sahar/47b.ilove my bf heart.png" alt="Our First Memory">
+								<img src="sahar/47b.ilove my bf heart.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>i love my girlfriend <3</p>
 								</div>
@@ -1105,14 +1112,14 @@ document.addEventListener('DOMContentLoaded', startGame);
 							
 							<!-- Image 3 -->
 							<div class="gallery-item">
-								<img src="sahar/48when she agreed to watch transformers.png" alt="Our First Memory">
+								<img src="sahar/48when she agreed to watch transformers.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>this was so cute how  you agreed to watching it so easily because i liked it awwww</p>
 								</div>
 							</div>
 							<!-- Image 3 -->
 							<div class="gallery-item">
-								<img src="sahar/49.sahar bath heart.png" alt="Our First Memory">
+								<img src="sahar/49.sahar bath heart.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>not gonna leave you no matter where you go bae mwah (just got a solid boner)</p>
 								</div>
@@ -1120,7 +1127,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 
 							<div class="gallery-item">
 								<video autoplay muted loop width="100%">
-									<source src="sahar/100reasonsanniversary.mp4" type="video/mp4">
+									<source src="sahar/100reasonsanniversary.mp4" loading="lazy" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
 								<div class="gallery-caption">
@@ -1130,28 +1137,28 @@ document.addEventListener('DOMContentLoaded', startGame);
 							
 							<!-- Image 3 -->
 							<div class="gallery-item">
-								<img src="sahar/50.me glasses filtyer sahar.jpg" alt="Our First Memory">
+								<img src="sahar/50.me glasses filtyer sahar.jpg" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>that was a tough period, but tried everything i had in me to get my bae back. i love you so much baby</p>
 								</div>
 							</div>
 							<!-- Image 3 -->
 							<div class="gallery-item">
-								<img src="sahar/51sahar chit +25.jpg" alt="Our First Memory">
+								<img src="sahar/51sahar chit +25.jpg" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>fighting for and putting my  girl first always.</p>
 								</div>
 							</div>
 							<!-- Image 3 -->
 							<div class="gallery-item">
-								<img src="sahar/52NCA admission.png" alt="Our First Memory">
+								<img src="sahar/52NCA admission.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>THE DREAM FULFILLED !!!!! SO PROUD OF YOU MY LOVE</p>
 								</div>
 							</div>
 							<!-- Image 3 -->
 							<div class="gallery-item">
-								<img src="sahar/kissie.png" alt="Our First Memory">
+								<img src="sahar/kissie.png" loading="lazy" alt="Our First Memory">
 								<div class="gallery-caption">
 									<p>i promise to love you till the end of time Sahar.
 										i hope you enjoyed all of these and had the patience.
@@ -1190,7 +1197,7 @@ document.addEventListener('DOMContentLoaded', startGame);
 								width="100%" 
 								height="352" 
 								frameBorder="0" 
-								allowfullscreen="" 
+								allowfullscreen="true" 
 								allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
 								loading="lazy">
 							</iframe>
@@ -1308,21 +1315,11 @@ document.addEventListener('DOMContentLoaded', startGame);
         observer.observe(document.getElementById('typed-letter'));
     });
 
-	// Add this to your script
-music.addEventListener('loadstart', function() {
-    musicControl.innerHTML = '<i class="fas fa-spinner fa-spin" style="font-size: 30px; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"></i>';
-});
+	
 
-music.addEventListener('canplaythrough', function() {
-    if (music.paused) {
-        musicControl.innerHTML = '<i class="fas fa-volume-mute" style="font-size: 30px; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"></i>';
-    } else {
-        musicControl.innerHTML = '<i class="fas fa-volume-up" style="font-size: 30px; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"></i>';
-    }
-});
+
 </script>
-</script>
-			</script>
+
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
