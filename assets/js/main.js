@@ -1,9 +1,75 @@
-/*
-	Big Picture by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+// Audio setup
 
+document.addEventListener('DOMContentLoaded', function() {
+
+    const music = document.getElementById('bgMusic');
+
+    
+
+    if (music) {
+
+        music.addEventListener('loadstart', function() {
+
+            const musicControl = document.getElementById('musicControl');
+
+            if (musicControl) {
+
+                musicControl.innerHTML = '<i class="fas fa-spinner fa-spin" style="font-size: 30px; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"></i>';
+
+            }
+
+        });
+
+        music.addEventListener('canplaythrough', function() {
+
+            const musicControl = document.getElementById('musicControl');
+
+            if (musicControl) {
+
+                if (music.paused) {
+
+                    musicControl.innerHTML = '<i class="fas fa-volume-mute" style="font-size: 30px; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"></i>';
+
+                } else {
+
+                    musicControl.innerHTML = '<i class="fas fa-volume-up" style="font-size: 30px; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"></i>';
+
+                }
+
+            }
+
+        });
+
+    }
+
+});
+
+
+
+
+const utils = {
+    throttle: (func, limit) => {
+        let inThrottle;
+        return function(...args) {
+            if (!inThrottle) {
+                func.apply(this, args);
+                inThrottle = true;
+                setTimeout(() => inThrottle = false, limit);
+            }
+        }
+    },
+    debounce: (func, wait) => {
+        let timeout;
+        return function executedFunction(...args) {
+            const later = () => {
+                clearTimeout(timeout);
+                func(...args);
+            };
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+        };
+    }
+};
 (function($) {
 
 	var	$window = $(window),
