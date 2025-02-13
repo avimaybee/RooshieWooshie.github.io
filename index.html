@@ -207,14 +207,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Handle page visibility change (when user switches tabs or minimizes browser)
-    document.addEventListener('visibilitychange', async function() {
-        if (document.hidden && !music.paused) {
-            await fadeOut();
-            musicControl.innerHTML = '<i class="fas fa-volume-mute" style="font-size: 30px; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"></i>';
-        }
-    });
-
     // Optional: Handle page unload
     window.addEventListener('beforeunload', async function(e) {
         if (!music.paused) {
