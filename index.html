@@ -113,8 +113,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const fadeDuration = 2000;
     let fadeInterval;
 
-    // Add touch event listener to start music
-    document.addEventListener('touchstart', function startMusic() {
+    // Add scroll event listener to start music
+    window.addEventListener('scroll', function startMusic() {
         if (!isPlaying) {
             music.play().then(() => {
                 fadeIn();
@@ -122,11 +122,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }).catch(error => {
                 console.log('Playback failed:', error);
             });
-            // Remove the event listener after first touch
-            document.removeEventListener('touchstart', startMusic);
+            // Remove the scroll listener after first trigger
+            window.removeEventListener('scroll', startMusic);
         }
     }, { once: true });
-
 
     // Fade in function
     function fadeIn() {
@@ -168,25 +167,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }, fadeDuration / steps);
         });
     }
-
-    // Function to start playing with fade in
-    async function startPlaying() {
-        if (!isPlaying) {
-            music.volume = 0; // Start with volume 0
-            await music.play();
-            fadeIn();
-            isPlaying = true;
-        }
-    }
-
-    // Listen for both click and touch events on body
-    ['click', 'touchstart'].forEach(eventType => {
-        document.body.addEventListener(eventType, function(e) {
-            if (!isPlaying) {
-                startPlaying();
-            }
-        }, { once: true });
-    });
 
     // Toggle music control with both click and touch events
     ['click', 'touchstart'].forEach(eventType => {
