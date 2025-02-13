@@ -2355,18 +2355,28 @@ a.button.down {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(transparent, rgba(255,255,255,0.1));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)); /* Changed to dark gradient */
     backdrop-filter: blur(10px) contrast(90%) brightness(110%);
     -webkit-backdrop-filter: blur(10px) contrast(90%) brightness(110%);
-    padding: 5px;
+    padding: 10px; /* Slightly more padding */
     opacity: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Adds to glass effect */
-    box-shadow: 0 -10px 20px rgba(0,0,0,0.1); /* Subtle shadow at top */
-	min-height: 30px; /* Reduced height */
-    border-radius: 15px 15px 0 0; /* Optional: rounds top corners */
+    border-top: 1px solid rgba(255, 255, 255, 0.15); /* Slightly stronger border */
+    box-shadow: 
+        0 -10px 20px rgba(0,0,0,0.1),
+        inset 0 0 20px rgba(0,0,0,0.1); /* Added inner shadow */
+    min-height: 40px; /* Slightly taller */
+    border-radius: 15px 15px 0 0;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Add hover effect */
+.gallery-item:hover .gallery-caption {
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+    backdrop-filter: blur(12px) contrast(95%) brightness(105%);
+    -webkit-backdrop-filter: blur(12px) contrast(95%) brightness(105%);
 }
 
 .gallery-caption::before {
@@ -2386,18 +2396,29 @@ a.button.down {
 }
 
 .gallery-caption p {
-    color: rgba(255, 255, 255, 0.95);
+    color: rgba(255, 255, 255, 0.98); /* Increased opacity for better visibility */
     margin: 0;
-    font-size: 0.95em;
+    font-size: 1em; /* Slightly larger */
     text-align: center;
-    font-weight: 300;
-    letter-spacing: 0.5px;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    font-weight: 400; /* Slightly bolder */
+    letter-spacing: 0.3px; /* Reduced for better readability */
+    text-shadow: 
+        0 1px 3px rgba(0,0,0,0.3),
+        0 0 8px rgba(0,0,0,0.2); /* Double text shadow for better contrast */
     font-family: 'Source Sans Pro', sans-serif;
-    line-height: 1.4;
-    position: relative; /* Keeps text above the glass effect */
+    line-height: 1.5;
+    position: relative;
     z-index: 1;
-    padding: 0 10px;
+    padding: 0 15px; /* More padding */
+    transition: all 0.2s ease; /* Smooth transition */
+}
+
+/* Optional: Add hover effect */
+.gallery-item:hover .gallery-caption p {
+    transform: translateY(-1px); /* Subtle lift effect */
+    text-shadow: 
+        0 2px 4px rgba(0,0,0,0.4),
+        0 0 10px rgba(0,0,0,0.3);
 }
 
 /* Desktop Hover Effects */
